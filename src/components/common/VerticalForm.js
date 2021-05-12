@@ -4,6 +4,11 @@ import { Form, Input, Button } from 'antd';
 import { useOktaAuth } from '@okta/okta-react';
 import { editCustomerPet } from '../../api';
 
+// Milo
+// Create reusable form component that lets you create forms on different screens / Supports image upload
+// It takes in fields you're looking to display, the layout, data if you want to prefill inputs and a function 
+// The function opens/closes the ant-design popup modal which allows you to not only display forms on screens but also in the ant-d popup modals
+
 const VerticalForm = ({ fields, layout, data, setIsModalVisible }) => {
   const [form] = Form.useForm();
   const [formLayout, setFormLayout] = useState(layout);
