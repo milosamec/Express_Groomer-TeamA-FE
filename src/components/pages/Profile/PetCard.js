@@ -11,6 +11,11 @@ import VerticalForm from '../../common/VerticalForm';
 import { useOktaAuth } from '@okta/okta-react';
 import { deleteCustomerPet } from '../../../api';
 
+// Milo
+// Petcard dropdown with popup component that allows customer to edit pet's information
+// Takes in pet's information, functions to handle save/delete pet, current form state, and passes it to the reusable form component
+// We import deleteCustomerPet and useOktaAuth to successfully delete the pet
+
 const PetCard = ({
   pet,
   petData,
