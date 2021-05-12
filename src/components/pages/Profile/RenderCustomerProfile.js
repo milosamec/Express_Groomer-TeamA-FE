@@ -14,6 +14,10 @@ import './profile.css';
 import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 
+// Milo
+// We're rendering the whole client profile with the customers information, pets and appointments
+// So we can display it on the users dashboard and let the client interact with their account, pet and appointment data.
+
 const RenderCustomerProfile = ({ userInfo, pets, appointments }) => {
   // Dummy Data
   const dates = [
